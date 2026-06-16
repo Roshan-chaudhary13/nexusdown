@@ -1,0 +1,27 @@
+# PyInstaller / Build outputs
+build/
+dist/
+*.exe
+*.spec
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local configurations & secrets
+config.json
+Token.txt
+*.pth
+
+# Local logs
+logs/
+*.log
+
+# Workspace / Agent temporary files
+.agents/
+scratch/
+workpath.txt
+
+# OS metadata
+.DS_Store
+Thumbs.db

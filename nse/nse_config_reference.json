@@ -1,0 +1,186 @@
+{
+  "config": {
+    "Dates": {
+      "Capital_Dates": {
+        "FromDate": "29052026",
+        "NextDate": "01062026",
+        "BackDate": "27052026"
+      },
+      "CDS_Dates": {
+        "FromDate": "29052026",
+        "NextDate": "01062026",
+        "BackDate": "28052026"
+      },
+      "Commex_Dates": {
+        "FromDate": "29052026",
+        "NextDate": "01062026",
+        "BackDate": "28052026"
+      }
+    },
+    "Member_Code": {
+      "NSE_CODE": "09837",
+      "NSEFO_CODE": "F14905",
+      "NSECD_CODE": "X14905"
+    },
+    "API_DETAILS": {
+      "NSE_API": {
+        "MemberCode": "09837",
+        "LoginID": "AUTOMATION",
+        "Password": "zk_OepheBEldvcMBK1EZ8w==",
+        "ScrectKey": "8F+La20Z5jhFGJxGLr0wxP++1q0K29gRiX+Pt3Umi/M=",
+        "Password_String": "Automation@123",
+        "Path_CM_Member": [
+          "Onlinebackup",
+          "Reports/Standard report",
+          "Reports"
+        ],
+        "Path_CM_Common": [
+          "bhavcopy",
+          "varrate",
+          "ntneat",
+          "",
+          "clearing"
+        ],
+        "Path_FO_Member": [
+          "Onlinebackup",
+          "Reports",
+          "Reports/Standard report",
+          "/Reports/Dnld/PNL01"
+        ],
+        "Path_FO_Common": [
+          "Bhavcopy",
+          "",
+          "MarketReports",
+          "Contracts"
+        ],
+        "Path_CD_Member": [
+          "Onlinebackup",
+          "Reports",
+          "Reports/Standard report",
+          "/Reports/Dnld/PNL01"
+        ],
+        "Path_CD_Common": [
+          "Bhavcopy",
+          "",
+          "Contracts",
+          "MarketReports",
+          "Marketreports"
+        ],
+        "Path_SLB_Member": [
+          "Onlinebackup",
+          "Reports"
+        ],
+        "Path_SLB_Common": [
+          ""
+        ],
+        "version": "2.0",
+        "LoginURL": "https://www.connect2nse.com/extranet-api/login/#version#",
+        "LogoutURL": "https://www.connect2nse.com/extranet-api/logout/#version#",
+        "Member_File_Download_Url": "https://www.connect2nse.com/extranet-api/member/file/download/#version#?",
+        "Common_File_Download_Url": "https://www.connect2nse.com/extranet-api/common/file/download/#version#?",
+        "Member_File_Get_Url": "https://www.connect2nse.com/extranet-api/member/content/#version#?",
+        "Common_File_Get_Url": "https://www.connect2nse.com/extranet-api/common/content/#version#?"
+      }
+    },
+    "Path": {
+      "Equity": {
+        "NSECM": "C:\\FILE\\CASH\\"
+      },
+      "FO": {
+        "NSEFO": "C:\\FILE\\NSEFO\\"
+      },
+      "CDS": {
+        "NSECD": "C:\\FILE\\NSECD\\"
+      },
+      "SLB": {
+        "NSESLB": "C:\\FILE\\NSESLB\\"
+      }
+    },
+    "Master_Files": {
+      "CM_NSE": {
+        "TRADE": "Trade_NSE_CM_0_TM_#NSECODE#_#REVFROMDATE#_F_0000.csv",
+        "UDIFF_TRADE": "1",
+        "CPTest": "#DD##MM#0000.md",
+        "CP": "BhavCopy_NSE_CM_0_0_0_#REVFROMDATE#_F_0000.csv",
+        "UDIFF_CP": "1",
+        "VAR": "C_VAR1_#FROMDATE#_6.DAT",
+        "UDIFF_VAR": "0",
+        "VAR_BOD1": "C_VAR1_#FROMDATE#_1.DAT",
+        "VAR_BOD": "C_VAR1_#NEXTDATE#_1.DAT",
+        "MG13": "C_MG13_#NSECODE#_#FROMDATE#.lis",
+        "UDIFF_MG13": "0",
+        "STT": "STT_NCL_CM_0_TM_#NSECODE#_#REVFROMDATE#_F_0000.csv",
+        "UDIFF_STT": "1",
+        "SD01": "StampDuty_NCL_CM_0_TM_#NSECODE#_#REVFROMDATE#_F_0000.csv",
+        "OBG": "Obligation_NCL_CM_EquityT1_TM_#NSECODE#_#REVFROMDATE#_P_1530.csv",
+        "CSTT": "C_STT_#FROMDATE#.CSV",
+        "CSTT_IND": "C_STT_IND_#FROMDATE#.CSV",
+        "MFVAR": "MF_VAR_#FROMDATE#.csv",
+        "UDIFF_MFVAR": "0",
+        "APPCOLL": "",
+        "SLB_TRADE": "SLBM_#FROMDATE#_#NSECODE#.TXT",
+        "UDIFF_APPCOLL": "0",
+        "MG_PENALTY": "",
+        "MG_1": "Margin_NCL_CM_0_CM_#NSECODE#_#REVFROMDATE#_P_1100.csv",
+        "MG_2": "Margin_NCL_CM_0_CM_#NSECODE#_#REVFROMDATE#_P_1230.csv",
+        "MG_3": "Margin_NCL_CM_0_CM_#NSECODE#_#REVFROMDATE#_P_1430.csv",
+        "MG_4": "Margin_NCL_CM_0_CM_#NSECODE#_#REVFROMDATE#_P_1530.csv",
+        "UDIFF_MG_PENALTY": "0"
+      },
+      "FO_NSE": {
+        "TRADE": "Trade_NSE_FO_0_TM_#NSECODE#_#REVFROMDATE#_F_0000.csv",
+        "UDIFF_TRADE": "1",
+        "CP1": "BhavCopy_NSE_FO_0_0_0_#REVFROMDATE#_F_0000.csv",
+        "UDIFF_CP1": "1",
+        "CP2": "F_CN01_NSE_#FROMDATE#.CSV",
+        "UDIFF_CP2": "0",
+        "CP3": "F_CN01_MSEI_#FROMDATE#.CSV",
+        "UDIFF_CP3": "0",
+        "POS3": "Position_NCL_FO_0_CM_#NSECODE#_#REVFROMDATE#_F_0000.csv",
+        "UDIFF_POS3": "1",
+        "MG13": "F_MG13_#NSECODE#_#FROMDATE#.lis",
+        "UDIFF_MG13": "0",
+        "STT": "STT_NCL_FO_0_CM_#NSECODE#_#REVFROMDATE#_F_0000.csv",
+        "UDIFF_STT": "1",
+        "SD01": "StampDuty_NCL_FO_0_CM_#NSECODE#_#REVFROMDATE#_F_0000.csv",
+        "UDIFF_SD01": "0",
+        "APPCOLL": "",
+        "MG_1": "Margin_NCL_FO_0_CM_#NSECODE#_#REVFROMDATE#_P_1100.csv",
+        "MG_2": "Margin_NCL_FO_0_CM_#NSECODE#_#REVFROMDATE#_P_1230.csv",
+        "MG_3": "Margin_NCL_FO_0_CM_#REVFROMDATE#_P_1430.csv",
+        "MG_4": "Margin_NCL_FO_0_CM_#REVFROMDATE#_P_1530.csv",
+        "UDIFF_APPCOLL": "0",
+        "MG_PENALTY": "",
+        "UDIFF_MG_PENALTY": "0"
+      },
+      "CD_NSE": {
+        "TRADE": "Trade_NSE_CD_0_CM_#NSECODE#_#REVFROMDATE#_F_0000.csv",
+        "UDIFF_TRADE": "1",
+        "CP1": "BhavCopy_NSE_CD_0_0_0_#REVFROMDATE#_F_0000.csv",
+        "UDIFF_CP1": "0",
+        "CP2": "cd_contract",
+        "UDIFF_CP2": "0",
+        "CP3": "cd_contract",
+        "UDIFF_CP3": "0",
+        "POS3": "Position_NCL_CD_0_CM_#NSECODE#_#REVFROMDATE#_F_0000.csv",
+        "UDIFF_POS3": "1",
+        "MG13": "X_MG13_#NSECODE#_#FROMDATE#.lis",
+        "UDIFF_MG13": "1",
+        "SD01": "StampDuty_NCL_CD_0_CM_#NSECODE#_#REVFROMDATE#_F_0000.csv",
+        "CCR_SETT": "CCRSett_prce_#FROMDATE#.csv",
+        "STT": "STT_NCL_CD_0_CM_#NSECODE#_#REVFROMDATE#_F_0000.csv",
+        "UDIFF_STT": "1",
+        "APPCOLL": "",
+        "UDIFF_APPCOLL": "0",
+        "MG_PENALTY": "",
+        "UDIFF_MG_PENALTY": "0"
+      }
+    },
+    "BATCH_FLAG": {
+      "NSECM_BATCH_FLAG": "N",
+      "NSEFO_BATCH_FLAG": "Y",
+      "NSECD_BATCH_FLAG": "N",
+      "NSECO_BATCH_FLAG": "N"
+    }
+  }
+}
