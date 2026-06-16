@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusDown Platform - Premium BSE & NSE Extranet Downloader</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <img src="TRANSPARENT LOGO.png" alt="NexusDown Logo" class="brand-logo">
+                <span class="brand-name">NexusDown</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#demo" class="nav-link">Live Demo</a>
+                <a href="#setup" class="nav-link">Installation</a>
+                <a href="#contact" class="nav-link">Developer</a>
+            </nav>
+            <div class="nav-cta">
+                <a href="NexusDown.zip" download class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-download"></i> Download Zip Package
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="badge">Windows Standalone Package</span>
+                <h1 class="hero-title">Automate BSE & NSE Extranet Downloads</h1>
+                <p class="hero-desc">
+                    A high-performance desktop platform that bypasses login friction, automates captcha solving, and downloads financial reports directly to your local server directories.
+                </p>
+                <div class="hero-actions">
+                    <a href="NexusDown.zip" download class="btn btn-primary btn-lg">
+                        <i class="fa-solid fa-download"></i> Download NexusDown.zip
+                    </a>
+                    <a href="#setup" class="btn btn-secondary btn-lg">
+                        <i class="fa-solid fa-circle-info"></i> Setup Guide
+                    </a>
+                </div>
+                <div class="dependency-cues">
+                    <span><i class="fa-solid fa-circle-check"></i> Standard config.json</span>
+                    <span><i class="fa-solid fa-circle-check"></i> Offline Captcha Solver</span>
+                </div>
+            </div>
+
+            <!-- Software Interactive Live Replica Mockup -->
+            <div class="mockup-wrapper">
+                <div class="mockup-header-actions">
+                    <span class="mockup-badge">Tactile UI Preview</span>
+                    <button id="web-theme-toggle" class="btn-theme-toggle">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Toggle Replica Style (Aluminium / Carbon)
+                    </button>
+                </div>
+                
+                <!-- Desktop Application Mockup Window (Carbon theme by default) -->
+                <div id="app-mockup" class="app-mockup theme-carbon">
+                    <!-- Title Bar -->
+                    <div class="mockup-titlebar">
+                        <div class="mockup-branding">
+                            <img src="TRANSPARENT LOGO.png" alt="Logo" class="mockup-logo">
+                            <div class="mockup-title-text">
+                                <span class="mockup-title">NexusDown Platform</span>
+                                <span class="mockup-subtitle">BSE & NSE Extranet Downloader</span>
+                            </div>
+                        </div>
+                        <div class="mockup-window-controls">
+                            <!-- BSE / NSE Page Tabs -->
+                            <div class="mockup-tabs">
+                                <button id="mock-tab-bse" class="mock-tab active">BSE India</button>
+                                <button id="mock-tab-nse" class="mock-tab inactive">NSE Connect</button>
+                            </div>
+                            <button class="mockup-nav-btn"><i class="fa-solid fa-envelope"></i> Contact Developer</button>
+                            <button class="mockup-nav-btn"><i class="fa-solid fa-bars"></i> Credentials Menu</button>
+                        </div>
+                    </div>
+
+                    <!-- Main Dashboard Content -->
+                    <div class="mockup-body">
+                        <!-- BSE Settings Page -->
+                        <div id="mock-page-bse" class="mockup-page active">
+                            <div class="mockup-card">
+                                <h3 class="card-headline">BSE Extranet Extraction Settings</h3>
+                                <div class="mockup-grid-2">
+                                    <div class="mockup-field">
+                                        <label>Main Category (BSE Folder)</label>
+                                        <div class="mockup-select-box">EQ <i class="fa-solid fa-caret-down"></i></div>
+                                    </div>
+                                    <div class="mockup-field">
+                                        <label>Target Subfolder</label>
+                                        <div class="mockup-select-box">Transaction <i class="fa-solid fa-caret-down"></i></div>
+                                    </div>
+                                </div>
+                                <div class="mockup-field">
+                                    <label>Extraction Date (DD-MM-YYYY)</label>
+                                    <div class="mockup-input-row">
+                                        <div class="mockup-input">15-06-2026</div>
+                                        <button class="mock-btn-yellow"><i class="fa-solid fa-calendar-days"></i></button>
+                                        <button class="mock-btn-white">Yesterday</button>
+                                        <button class="mock-btn-teal">Today</button>
+                                    </div>
+                                </div>
+                                <div class="mockup-field">
+                                    <label>PC Save Directory</label>
+                                    <div class="mockup-input-row">
+                                        <div class="mockup-input">C:\Users\rosha\Desktop\downloads\</div>
+                                        <button class="mock-btn-yellow">Browse...</button>
+                                    </div>
+                                </div>
+                                <button class="mock-btn-full">💾 Save BSE Configuration</button>
+                            </div>
+                        </div>
+
+                        <!-- NSE Settings Page -->
+                        <div id="mock-page-nse" class="mockup-page inactive">
+                            <div class="mockup-card border-block">
+                                <h3 class="card-headline text-purple">NSE Connect2NSE API Settings</h3>
+                                <div class="mockup-field">
+                                    <label>Select NSE Segments & Extraction Modes:</label>
+                                    <div class="mockup-checkbox-grid">
+                                        <label class="mock-checkbox-lbl"><span class="checked-box"><i class="fa-solid fa-square-check"></i></span> Cash (CM)</label>
+                                        <label class="mock-checkbox-lbl"><span class="checked-box"><i class="fa-solid fa-square-check"></i></span> Derivatives (FO)</label>
+                                        <label class="mock-checkbox-lbl"><span class="checked-box"><i class="fa-solid fa-square-check"></i></span> Currency (CD)</label>
+                                        <label class="mock-checkbox-lbl"><span class="empty-box"><i class="fa-regular fa-square"></i></span> SLB Reports</label>
+                                    </div>
+                                </div>
+                                <div class="mockup-grid-4">
+                                    <button class="mock-config-btn selected">All Files</button>
+                                    <button class="mock-config-btn selected">All Files</button>
+                                    <button class="mock-config-btn">Custom Config</button>
+                                    <button class="mock-config-btn disabled">Custom Config</button>
+                                </div>
+                                <div class="mockup-field">
+                                    <label>Extraction Date (DD-MM-YYYY)</label>
+                                    <div class="mockup-input-row">
+                                        <div class="mockup-input">15-06-2026</div>
+                                        <button class="mock-btn-yellow"><i class="fa-solid fa-calendar-days"></i></button>
+                                        <button class="mock-btn-white">Yesterday</button>
+                                        <button class="mock-btn-teal">Today</button>
+                                    </div>
+                                </div>
+                                <div class="mockup-field">
+                                    <label>NSE File Server Base Directory</label>
+                                    <div class="mockup-input-row">
+                                        <div class="mockup-input">C:\Users\rosha\Desktop\test_nse\</div>
+                                        <button class="mock-btn-yellow">Browse...</button>
+                                    </div>
+                                </div>
+                                <button class="mock-btn-full">💾 Save NSE Configuration</button>
+                            </div>
+                        </div>
+
+                        <!-- Action Run Button -->
+                        <button id="mock-run-btn" class="mockup-run-btn green-btn">
+                            <i class="fa-solid fa-rocket"></i> <span id="mock-run-btn-text">START BSE DOWNLOAD & RUN EXTRACTOR</span>
+                        </button>
+
+                        <!-- Central Console Display -->
+                        <div class="mockup-console-panel">
+                            <div class="mockup-console-header">
+                                <span class="console-label">Console Log Output</span>
+                                <span id="mock-status" class="mockup-status-tag">● IDLE</span>
+                            </div>
+                            <div class="mockup-terminal-glass">
+                                <div id="mock-terminal-screen" class="mockup-terminal-text">
+                                    NexusDown Console Screen ready.<br>
+                                    Use the "Live Demo Simulation" buttons below to test logging runs...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Simulation Trigger Buttons -->
+                <div class="demo-trigger-bar">
+                    <span class="simulation-title"><i class="fa-solid fa-terminal"></i> Live Demo Simulation:</span>
+                    <button id="sim-bse-btn" class="btn btn-primary btn-sm">Simulate BSE Run</button>
+                    <button id="sim-nse-btn" class="btn btn-secondary btn-sm">Simulate NSE Run</button>
+                    <button id="sim-clear-btn" class="btn btn-outline btn-sm">Clear Terminal</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-container">
+            <h2 class="section-title">Engineered for Reliability & Compliance</h2>
+            <p class="section-subtitle">A high-fidelity tool designed to eliminate manual downloads and handle back-office operational load securely.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-robot"></i></div>
+                    <h3>Automated Extranet Login</h3>
+                    <p>Bypasses manual browser login constraints on both Member Extranet web portal (BSE) and Connect2NSE API gateways.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>Local AI Captcha Solver</h3>
+                    <p>Employs an offline-ready neural network (weights bundled in the .pth file) to solve extranet web portal login captchas without external API fees.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3>NSE Connect API Suite</h3>
+                    <p>Interfaces directly with NSE servers. Downloads Cash, Derivatives, Currency, and SLB segment files via standard API connections.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                    <h3>Pre-Scheduled Extraction</h3>
+                    <p>Allows selection of Yesterday, Today, or custom calendar dates to pull and retroactively sync circulars and circular reports.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>Dynamic UI Themes</h3>
+                    <p>Skeuomorphic hardware console toggle. Switch between brushed dark carbon steel and brushed light aluminium based on workspace environment.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>100% Offline & Local</h3>
+                    <p>Guarantees zero leakage of stock broker extranet login credentials. Saves reports directly to local directories under local control.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation & Setup steps -->
+    <section id="setup" class="setup-section">
+        <div class="section-container">
+            <h2 class="section-title">Zero-Install Deployment Guide</h2>
+            <p class="section-subtitle">NexusDown is packaged as a standalone portable application. Set it up on any Windows client machine in 3 simple steps.</p>
+            
+            <div class="setup-steps">
+                <div class="setup-step">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h3>Download ZIP Package</h3>
+                        <p>Download <a href="NexusDown.zip" download class="inline-link">NexusDown.zip</a>. This archive contains the compiled program, model weights, and template configuration file.</p>
+                    </div>
+                </div>
+                <div class="setup-step">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h3>Extract Package Contents</h3>
+                        <p>Extract the compressed zip to your target folder on your client PC (e.g. your desktop or user directory).</p>
+                    </div>
+                </div>
+                <div class="setup-step">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h3>Configure & Launch</h3>
+                        <p>Double-click `NexusDown.exe` to run. Open the Credentials Menu drawer to input Member IDs and passwords to save your local configuration settings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Setup Directory Layout Box -->
+            <div class="dir-structure-card">
+                <h4><i class="fa-solid fa-folder-open"></i> Target Directory Layout Schema</h4>
+                <pre class="dir-code"><code>📁 c:\Users\Broker\Desktop\NexusDown\
+├── 📄 NexusDown.exe           (Standalone App)
+├── 📄 config.json             (Extranet Save Configurations)
+└── 📄 captcha_solver_model.pth (Local CAPTCHA Solver Model)</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Profile / Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title">Contact Developer</h2>
+            <p class="section-subtitle">Have questions or need custom API integration? Get in touch with the lead programmer.</p>
+            
+            <div class="contact-grid">
+                <!-- Developer Card -->
+                <div class="dev-card">
+                    <div class="dev-avatar">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="dev-info">
+                        <h3>Roshan Chaudhary</h3>
+                        <span class="dev-role">Full-Stack Financial Automation Engineer</span>
+                        <p class="dev-bio">Designing secure backend automation pipelines, neural network captcha decoders, and low-latency API integration frameworks for Indian financial institutions.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Channels -->
+                <div class="channels-card">
+                    <h4>Direct Channels</h4>
+                    <div class="contact-channels">
+                        <a href="https://roshan-chaudhary.in" target="_blank" class="channel-link">
+                            <span class="channel-icon website"><i class="fa-solid fa-globe"></i></span>
+                            <div class="channel-detail">
+                                <span class="channel-name">Website Portfolio</span>
+                                <span class="channel-value">roshan-chaudhary.in</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/13-roshan-chaudhary/" target="_blank" class="channel-link">
+                            <span class="channel-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></span>
+                            <div class="channel-detail">
+                                <span class="channel-name">LinkedIn Profile</span>
+                                <span class="channel-value">roshan-chaudhary</span>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/roshan_13_03/" target="_blank" class="channel-link">
+                            <span class="channel-icon instagram"><i class="fa-brands fa-instagram"></i></span>
+                            <div class="channel-detail">
+                                <span class="channel-name">Instagram Account</span>
+                                <span class="channel-value">@roshan_13_03</span>
+                            </div>
+                        </a>
+                        <a href="mailto:work@roshan-chaudhary.in" class="channel-link">
+                            <span class="channel-icon email"><i class="fa-solid fa-envelope"></i></span>
+                            <div class="channel-detail">
+                                <span class="channel-name">Business Email</span>
+                                <span class="channel-value">work@roshan-chaudhary.in</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-brand">
+                    <img src="TRANSPARENT LOGO.png" alt="NexusDown" class="footer-logo">
+                    <span>NexusDown</span>
+                </div>
+                <p class="footer-tagline">Secure, automated financial reporting pipelines for BSE & NSE Extranets.</p>
+            </div>
+            <div class="footer-right">
+                <span class="footer-version">v2.0 Standalone App</span>
+                <span class="footer-copy">&copy; 2026 Roshan Chaudhary. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
